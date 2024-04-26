@@ -76,7 +76,108 @@
     O arquivo de origem (src), o texto alternativo (alt), width e height são fornecidos como atributos.</p>
     <pre1>&lt;img src="html.png" alt="basichtml" width="104" height="142"&gt;</pre1>
     <p></p>
-    <img src="https://hermes.dio.me/articles/cover/1ee9c50a-fccd-4ec8-b57a-6a592a157a6d.png" width="104" height="142" >
+    <img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" alt="basichtml" width="100%" >
+    <p></p>
+    <h1>HTML Elements</h1>
+    <p>Elementos HTML são blocos de construção de uma página da web, representados por tags como
+        <pre1>&lt;p&gt;</pre1> para parágrafos ou  <pre1>&lt;h1&gt;</pre1> para títulos. 
+        Cada elemento tem uma função específica e pode conter texto, outros elementos ou atributos. 
+        Eles definem a estrutura e o conteúdo de uma página web.</p>
+    <p>Veja alguns exemplos:</p>
+    <p></p>
+    <pre>
+        &lt;h1&gt;Meu primeiro título&lt;/h1&gt;
+        &lt;p&gt;Meu primeiro parágrafo&lt;/p&gt;</pre>
+    <p></p>
+    <p>Observe que a tag SEMPRE é finalizada ao final.</p>
+    <p><b>Nota:</b> Alguns elementos HTML não possuem conteúdo (como o elemento <pre1>&lt;br&gt;</pre1>). 
+        Esses elementos são chamados de elementos vazios. Elementos vazios não possuem tag final!</p>
+        <p></p>
+    <h2>Elementos Alinhados</h2>
+    <p>Em HTML, os elementos podem ser aninhados, o que significa que um elemento pode conter outros elementos dentro dele. 
+        Todos os documentos HTML consistem em elementos HTML aninhados, 
+        formando uma estrutura hierárquica que define o conteúdo e a organização da página da web. Observe:</p>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;pt-BR&quot;&gt;
+            &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                &lt;title&gt;Meu Primeiro Documento HTML&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Título&lt;/h1&gt;
+                &lt;p&gt;Este é o meu primeiro parágrafo.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;</pre>
+            <p>Utilizamos a junção de várias tags.</p>
+            <P></P>
+            <h1>HTML Attributes</h1>
+            <p><li>Cada elemento HTML pode ter atributos.</li>
+                <li>Os atributos oferecem informações extras sobre os elementos.</li>
+                <li>Eles são sempre indicados na tag de abertura do elemento.</li>
+                <li>Geralmente, os atributos são definidos em pares nome/valor, como: nome="valor".</li></p>
+            <p><b>Atributo "href"</b></p>
+            <p>A <pre1>&lt;a&gt;</pre1> tag define um hiperlink. O href atributo especifica o URL da página para a qual o link leva:</p>
+            <p></p>
+            <pre1>
+                &lt;a&gt;href='https://www.google.com.br/>Acesse ao Google.'&lt;/a&gt;
+            </pre1>
+            <p><a href="https://www.google.com.br/">Acesse ao Google.</a></p>
+            <p><b>Atributo "src"</b></p>
+            <p>A <pre1>&lt;img&gt;</pre1> tag é usada para incorporar uma imagem em uma página HTML. O src atributo especifica o caminho para a imagem a ser exibida:</p>
+            <p></p>
+            <pre1>&lt;img src="progamação.jpg" alt="basichtml" width="104" height="142"&gt;</pre1>
+            <p></p>
+            <img src="https://blog.hubdodesenvolvedor.com.br/wp-content/uploads/2024/03/capa-linguagens-em-alta.jpg" alt="basichtml" width="100%">
+            <p>Existem duas formas de especificar o URL no atributo src:</p>
+
+            <p><b>1. URL absoluto:</b> Este tipo de URL aponta para uma imagem externa hospedada em outro site. Por exemplo: `src="https://www.w3schools.com/images/img_girl.jpg"`.</p>
+            <p><b>2. URL relativo:</b> Este tipo de URL aponta para uma imagem hospedada no mesmo site. Aqui, o URL não inclui o nome de domínio. Se o URL começar sem uma barra, ele será relativo à página atual. 
+                Por exemplo: `src="img_girl.jpg"`. Se o URL começar com uma barra, ele será relativo ao domínio. Por exemplo: `src="/images/img_girl.jpg"`.</p>
+                <p></p>
+                <b>Dica:</b> Em muitos casos, é preferível usar URLs relativos. Eles não quebrarão se você mudar de domínio.</p>
+
+            <p><b>Atributos de largura e altura</b></p>
+            <p>A <pre1>&lt;img&gt;</pre1> tag também deve conter os atributos widthe height, que especificam a largura e a altura da imagem (em pixels):</p>
+            <p><pre1>&lt;img src="estudo.jpg" alt="basichtml" width="450" height="250"&gt;</pre1></p>
+            <p><img class="ex" src="https://docmanagement.com.br/wp-content/uploads/2021/01/1-7.jpg" width="450" height="100%"></p>
+            <p><b>ATENÇÃO:</b> O termo "alt" é alternativo, ou seja, não é obrigatório. Ele indica a descrição da imagem, caso ocorra algum impasse e não seja reproduzida.</p>
+            <p></p>
+            <p><b>Atributo "style"</b></p>
+            <p>O style atributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
+            <p></p>
+            <p> <pre1> &lt;p&gt;style="color:#e0720a;">Esse parágrafo é laranja.&lt;/p&gt;</pre1></p>
+            <p style="color: #e0720a;"><b>Esse parágrafo é laranja.</b></p>
+            <p>Com esse atributo, "style", você pode alterar o tamanho, alinhas a posição e até mesmo a fonte. Veja:</p>
+            <p> <pre1> &lt;p&gt;style="color: #e0720a; font-size: 20px; text-align: center;">
+                <b>Esse parágrafo é laranja e formatado.</b>&lt;/p&gt;</pre1></p>
+            <p style="color: #e0720a; font-size: 20px; text-align: center;">
+                <b>Esse parágrafo é laranja e formatado.</b>
+            </p>
+            <p><b>Detalhe: Você pode utilizar o "style", da mesma maneira, para formatar cabeçalhos, como h1.</b></p>
+            <p><b>Atributo "lang"</b></p>
+            <p>Você deve sempre incluir o <pre1>&lt;lang&gt;</pre1> atributo dentro da <pre1>&lt;html&gt;</pre1> tag, para declarar o idioma da página web.
+                 O objetivo é ajudar os mecanismos de pesquisa e navegadores.
+                 O exemplo a seguir especifica o inglês como idioma:</p>
+                 <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang=&quot;en&quot;&gt;
+                    &lt;body&gt;
+                        ...
+                    &lt;/body&gt;
+                    &lt;/html&gt;</pre>
+            <p>Atributo "title"</p>
+            <p>O <pre1>&lt;title&gt;</pre1> atributo define algumas informações extras sobre um elemento.
+    O valor do atributo title será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:</p>
+    <p><pre1> &lt;p&gt;title="PARÁGRAFO">Pare o cursor sobre o parágrafo e veja o título.&lt;/p&gt;</pre1></p>
+    <p style="color: #100574;" title="PARÁGRAFO"><b>Pare o cursor sobre o parágrafo e veja o título.</b></p>
+
+
+
+
+
+
     </div>
     <footer class="footer">
         <div class="footer-container">
