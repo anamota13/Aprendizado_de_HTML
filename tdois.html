@@ -37,8 +37,7 @@
             &lt;/head&gt;
             &lt;body&gt;
             &lt;/body&gt;
-            &lt;/html&gt;
-        </pre>
+            &lt;/html&gt;</pre>
         
         <h1>HTML Page Title</h1>
         <p>Cada página da web deve ter um título para descrever o significado da página.</p>
@@ -51,8 +50,7 @@
             &lt;/head&gt;
             &lt;body&gt;
             &lt;/body&gt;
-            &lt;/html&gt;
-        </pre>
+            &lt;/html&gt;</pre>
 
         <h1>HTML Table</h1>
         <p>As tabelas HTML permitem que os desenvolvedores da web organizem os dados em linhas e colunas.</p>
@@ -76,8 +74,7 @@
     &lt;td&gt;Ahmed&lt;/td&gt;
     &lt;td&gt;Egito&lt;/td&gt;
   &lt;/tr&gt;
-&lt;/table&gt;
-</pre>
+&lt;/table&gt;</pre>
 
 <p>Veja como ficou:</p>
 <p></p>
@@ -110,8 +107,7 @@
         &lt;li&gt;HTML&lt;/li&gt;
         &lt;li&gt;Java&lt;/li&gt;
         &lt;li&gt;CSS&lt;/li&gt;
-        &lt;/ul&gt;
-    </pre>  
+        &lt;/ul&gt;</pre>  
     <p><ul>
         <li>HTML</li>
         <li>Java</li>
@@ -158,12 +154,97 @@
             <dt>CSS</dt>
             <dd>- Linguagem de estilo usada para estilizar a aparência de documentos HTML.</dd>
           </dl>
-          
+        
+          <h1>HTML Block & Inline</h1>
+          <p>Um elemento de nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível.</p>
+          <p>Um elemento embutido não começa em uma nova linha e ocupa apenas a largura necessária.</p>
+          <p>O <pre1>&lt;div&gt;</pre1> elemento é de nível de bloco e geralmente é usado como contêiner para outros elementos HTML</p>
+          <p> O <pre1>&lt;span&gt; </pre1> elemento é um contêiner embutido usado para marcar uma parte de um texto ou parte de um documento</p>
+            
+          <p>Veja como utlizar esses elementos:</p>
+          <p></p>
+          <h2>Elemento Span</h2>
+          <p>Para utlizar esse elemento é bem simples, basta seguir o código abaixo:</p>
+<pre>&lt;p&gt;Minha mãe tem &lt;span style="color:blue;font-weight:bold;"&gt;olhos azuis&lt;/span&gt; e meu pai tem &lt;span style="color:darkolivegreen;font-weight:bold;"&gt;olhos verdes escuros&lt;/span&gt;.&lt;/p&gt;</pre>
+          <p>Veja o resultado:</p>
+          <p>Minha mãe tem <span style="color:blue;font-weight:bold;">olhos azuis</span> e meu pai tem <span style="color:darkolivegreen;font-weight:bold;">olhos verdes escuros</span>.</p>
 
+          <p></p>
+        <h2>Elemento DIV</h2>
+        <p>Como dito no tópico anterior, O <pre1>&lt;div&lt;</pre1> elemento é frequentemente usado como contêiner para outros elementos HTML.</p>
+        <p>Não possui atributos obrigatórios, mas <pre1>&lt;style&lt;</pre1>, <pre1>class</pre1> e <pre1>&lt;id&lt;</pre1> são comuns.</p>
+        <p>Siga os passos abaixo para criar uma div:</p>
+        <pre>
+            &lt;div class="minha-div"&gt;
+            &lt;h2&gt;DIV 1&lt;/h2&gt;
+            &lt;p&gt;Conteúdo da primeira div.&lt;/p&gt;
+            &lt;/div&gt;</pre>
 
+        <p>CSS:</p>
 
+        <pre>
+&lt;style&gt;
+  .minha-div {
+    width: 45%; 
+    background-color: #9bdb34; 
+    color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 2.5%; 
+    max-width: 600px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+&lt;/style&gt;
+</pre>
+<p>Agora, veja como ficou:</p>
+        <div class="minha-div">
+            <h2>DIV 1</h2>
+            <p>Conteúdo da primeira div.</p>
+          </div>
+    
+    <h1>HTML Class</h1>
+    <p>Em HTML, uma classe é um atributo usado para agrupar elementos que compartilham 
+        características semelhantes, permitindo a aplicação de estilos ou comportamentos a esses elementos de forma consistente.</p>
+    <p>Veja um exemplo:</p>
+    <pre>
+        &lt;p class="destaque"&gt;Este parágrafo está em destaque.&lt;/p&gt;</pre>
+    
+    <p>Assim, você pode estilizar seu parágrafo no CSS:</p>
+    <pre>&lt;style&gt;
+    .destaque &#123;
+        color: #ff6600;
+        font-weight: bold;&#125;
+&lt;/style&gt;</pre>
 
+    <p>Dessa maneira, seu elemento está estilizado:</p>
+    <p class="destaque">Este parágrafo está em destaque.</p>
 
+    <h1>HTML ID</h1>
+    <p>Um ID em HTML é um atributo usado para identificar exclusivamente um elemento na página. 
+    Ele deve ser único dentro do documento e é frequentemente usado para aplicar estilos ou comportamentos específicos a um elemento.</p>
+    <p>Na prática, o uso do id é parecido com o class. Veja:</p>
+    <pre>
+        &lt;p id="destaque"&gt;Este parágrafo está em destaque.&lt;/p&gt;
+    </pre>
+
+    <p>No CSS você ira colocar um # antes do id:</p>
+    <pre>&lt;style&gt;
+        #destaque &#123;
+            color: #09ff00;
+            font-weight: bold;&#125;
+    &lt;/style&gt;</pre>
+    <p>Resultado:</p>
+    <p id="destaque">Este parágrafo está em destaque.</p>
+    
+    <h1>HTML Iframe</h1>
+    <p>Um iframe HTML é usado para exibir uma página da web dentro de uma página da web.</p>
+    <p></p>
+    <pre>&lt;iframe src="index.html" height="200" width="300" title="Iframe Example"&gt;&lt;/iframe&gt;</pre>
+    <p></p>
+    <iframe src="index.html" height="300" width="800" title="Iframe Example"></iframe>
+
+    <p>Chegamos ao fim de nosso tópico. Agora, vá aos tópicos restantes e bons estudos!</p>
     </div>
     <footer class="footer">
         <div class="footer-container">

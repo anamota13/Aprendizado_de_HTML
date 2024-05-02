@@ -147,3 +147,25 @@ q {
 address{
     font-style: italic;
 }
+
+.minha-div {
+    width: 45%; 
+    background-color: #9bdb34; 
+    color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 2.5%; 
+    max-width: 600px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .destaque {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+#destaque {
+    color: #09ff00;
+    font-weight: bold;
+}
