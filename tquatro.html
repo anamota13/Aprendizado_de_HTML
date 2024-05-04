@@ -222,6 +222,45 @@
         <p>Em HTML, qualquer elemento pode ser arrastado e solto.</p>
         <p>Arrastar e soltar é um recurso muito comum. É quando você “pega” um objeto e o arrasta para um local diferente.</p>
         <p>Veja um exemplo:</p>
+        <p><pre>
+        &lt;style&gt;
+            #dragElement {
+                width: 100px;
+                height: 100px;
+                background-color: #002b44;
+                color: #fff;
+                text-align: center;
+                line-height: 100px;
+                cursor: move;
+            }
+            #dropZone {
+                width: 100px;
+                height: 150px;
+                border: 2px dashed #ccc;
+                margin-top: 20px;
+            }
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        
+        &lt;div id="dragElement" draggable="true" ondragstart="drag(event)"&gt;Arraste aqui&lt;/div&gt;
+        &lt;div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)"&gt;Solte aqui&lt;/div&gt;
+        
+        &lt;script&gt;
+            function allowDrop(event) {
+                event.preventDefault();
+            }
+            
+            function drag(event) {
+                event.dataTransfer.setData("text", event.target.id);
+            }
+            
+            function drop(event) {
+                event.preventDefault();
+                var data = event.dataTransfer.getData("text");
+                event.target.appendChild(document.getElementById(data));
+            }
+        &lt;/script&gt;</pre></p>
         <p></p>
         
         <style>
@@ -277,7 +316,7 @@
 
     </div>
     <footer class="rodape">
-      <p>&copy; 2024 Basic HTML. Todos os direitos reservados. Desenvolvido por <a href="#">Ana Júlia Alves Mota</a></p>
+      <p>&copy; 2024 Basic HTML. Todos os direitos reservados. Desenvolvido por <a href="https://github.com/anamota13/Aprendizado_de_HTML.git">Ana Júlia Alves Mota</a></p>
   </footer>
 </body>
 </html>
