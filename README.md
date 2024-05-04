@@ -54,6 +54,9 @@ A página web apresenta a mesma estrutura em todas as páginas, siga os screensh
 ![image](https://github.com/anamota13/Aprendizado_de_HTML/assets/110187484/76386897-d35b-4e27-8611-1ab53069e5a2)
 ![image](https://github.com/anamota13/Aprendizado_de_HTML/assets/110187484/5c8bfa3a-33bc-462f-84f5-cacd64242e23)
 
+## 📚 Referência
+Para a criação do projeto, utilizei o <a href="https://www.w3schools.com/html/default.asp" style="color: black;">W3Schools</a> como minha principal fonte de referência. O site me forneceu os recursos e exemplos necessários para desenvolver um material didático claro e acessível sobre os fundamentos do HTML. A estrutura e o conteúdo do site foram construídos com base nas orientações e práticas recomendadas pelo W3Schools, garantindo assim a qualidade do tutorial oferecido aos usuários.
+
 
 
 
