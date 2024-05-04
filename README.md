@@ -4,28 +4,48 @@
 Projeto baseado em uma página web para a criação de um material didático destinado aos alunos da graduação na Fatec. A página interativa permitirá aos alunos visualizar exemplos de código HTML e sua implementação direta na mesma página, fazendo com que adquiram conhecimento a respeito de HTML.
 
 Foram trabalhados os seguintes conteúdos: 
-| Número | Tópico                 | Número | Tópico                 |
-| ------ | ---------------------- | ------ | ---------------------- |
-| 1      | HTML Basic             | 21     | HTML Semantics         |
-| 2      | HTML Elements          | 22     | HTML Style Guide       |
-| 3      | HTML Attributes        | 23     | HTML Entities          |
-| 4      | HTML Headings          | 24     | HTML Symbols           |
-| 5      | HTML Paragraphs        | 25     | HTML Emojis            |
-| 6      | HTML Styles            | 26     | HTML Charsets          |
-| 7      | HTML Formatting        | 27     | HTML URL Encode        |
-| 8      | HTML Quotations        | 28     | HTML vs XHTML          |
-| 9      | HTML Comments          | 29     | HTML Forms             |
-| 10     | HTML Colors            | 30     | HTML Form Attributes   |
-| 11     | HTML Links             | 31     | HTML Form Elements     |
-| 12     | HTML Favicon           | 32     | HTML Input Types       |
-| 13     | HTML Table             | 33     | HTML Input Attributes  |
-| 14     | HTML List              | 34     | Input Form Attributes  |
-| 15     | HTML Block & Inline    | 35     | HTML Canvas            |
-| 16     | HTML Div               | 36     | HTML SVG               |
-| 17     | HTML Classes           | 37     | HTML Media             |
-| 18     | HTML Id                | 38     | HTML Video             |
-| 19     | HTML Iframes           | 39     | HTML Audio             |
-| 20     | HTML JavaScript        | 40     | HTML Drag/Drop         |
+| Número | Tópico                 |
+| ------ | ---------------------- |
+| 1      | HTML Basic             |
+| 2      | HTML Elements          |
+| 3      | HTML Attributes        |
+| 4      | HTML Headings          |
+| 5      | HTML Paragraphs        |
+| 6      | HTML Styles            |
+| 7      | HTML Formatting        |
+| 8      | HTML Quotations        |
+| 9      | HTML Comments          |
+| 10     | HTML Colors            |
+| 11     | HTML Links             |
+| 12     | HTML Favicon           |
+| 13     | HTML Table             |
+| 14     | HTML List              |
+| 15     | HTML Block & Inline    |
+| 16     | HTML Div               |
+| 17     | HTML Classes           |
+| 18     | HTML Id                |
+| 19     | HTML Iframes           |
+| 20     | HTML JavaScript        |
+| 21     | HTML Semantics         |
+| 22     | HTML Style Guide       |
+| 23     | HTML Entities          |
+| 24     | HTML Symbols           |
+| 25     | HTML Emojis            |
+| 26     | HTML Charsets          |
+| 27     | HTML URL Encode        |
+| 28     | HTML vs XHTML          |
+| 29     | HTML Forms             |
+| 30     | HTML Form Attributes   |
+| 31     | HTML Form Elements     |
+| 32     | HTML Input Types       |
+| 33     | HTML Input Attributes  |
+| 34     | Input Form Attributes  |
+| 35     | HTML Canvas            |
+| 36     | HTML SVG               |
+| 37     | HTML Media             |
+| 38     | HTML Video             |
+| 39     | HTML Audio             |
+| 40     | HTML Drag/Drop         |
 
 
 ## 🌐 Acesso 
