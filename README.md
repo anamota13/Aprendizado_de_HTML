@@ -41,6 +41,7 @@ Clique no link abaixo para acessar o site elaborado:
 
 ## 💻 Screenshots | Imagens do Site
 A página web apresenta a mesma estrutura em todas as páginas, siga os screenshots de uma de nossas páginas (Página - HTML - Tópico 4):
+
 ![image](https://github.com/anamota13/Aprendizado_de_HTML/assets/110187484/442a5b85-8d7a-4581-b3d9-76f2a4bda2c7)
 ![image](https://github.com/anamota13/Aprendizado_de_HTML/assets/110187484/b034e402-f77f-452e-94f9-32897a7f59e4)
 ![image](https://github.com/anamota13/Aprendizado_de_HTML/assets/110187484/a568ac40-7d0e-40a5-9b53-e03832750b12)
