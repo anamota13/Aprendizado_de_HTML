@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #002b44;
+    background-color: #006097;
     text-align: center;
     color: white;
     padding: 10px 0;
@@ -37,14 +37,14 @@ header {
 .menu li a {
     display: block;
     padding: 10px 20px;
-    background-color: #002b44;
+    background-color: #006097;
     color: white;
     text-decoration: none;
     border-radius: 20px;
 }
 
 .menu li a:hover {
-    background-color: #006097;
+    background-color: #0272b3;
 }
 
 .content {
@@ -176,7 +176,7 @@ table {
 }
 
 .rodape {
-    background-color: #002b44;
+    background-color: #006097;
     padding: 30px 0;
     text-align: center;
     font-family: Arial, sans-serif;
