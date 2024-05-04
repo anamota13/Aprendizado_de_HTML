@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/Aprendizado_de_HTML/imagens/icone_favicon (1).png">
+
+    <title>HTML - Tópico 3</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Aprendizado_de_HTML/imagens/logotipo.png">
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="tum.html">HTML - Tópico 1</a></li>
+            <li><a href="tdois.html">HTML - Tópico 2</a></li>
+            <li><a href="ttres.html">HTML - Tópico 3</a></li>
+            <li><a href="tquatro.html">HTML - Tópico 4</a></li>
+        </ul>
+    </nav> 
+    <div class="content">
+       <h1>HTML Form Elements</h1>
+       <p>Este capítulo descreve todos os diferentes elementos do formulário HTML. Veja a seguir o uso de cada um deles:</p>
+       <p><b>Elemento <pre1>&lt;input&gt;</pre1>: </b> ser exibido de diversas maneiras, dependendo do <pre1>type</pre1> atributo.</b></p>
+       <p><b>Exemplo:</b></p>
+       <p><pre>
+        &lt;label for="fname"&gt;First name:&lt;/label&gt;
+        &lt;input type="text" id="fname" name="fname"&gt;</pre></p>
+        <p><b>Resultado:</b></p>
+        <p><form action="/action_page.php">
+            <label for="fname">Nome:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Enviar">
+          </form></p>
+        
+        <p><b>Elemento <pre1>&lt;label&gt;</pre1>:</b>  O elemento <pre1>&lt;label&gt;</pre1> em HTML é usado para associar um rótulo a um elemento de formulário, 
+        como input, textarea, select, etc. 
+        Ele fornece uma descrição para o elemento de formulário, melhorando a acessibilidade e a usabilidade do formulário.</p>
+        
+        <p><b>Elemento <pre1>&lt;select&gt;:</b>define uma lista suspensa:</p>
+        <p><pre>
+        &lt;label for="cars"&gt;Escolha um carro:&lt;/label&gt;
+        &lt;select id="cars" name="cars"&gt;
+              &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+              &lt;option value="saab"&gt;Saab&lt;/option&gt;
+              &lt;option value="fiat"&gt;Fiat&lt;/option&gt;
+              &lt;option value="audi"&gt;Audi&lt;/option&gt;
+        &lt;/select&gt;</pre></p>
+        <p><b>Veja o resultado:</b></p>
+        <p></p>
+        <label for="cars">Escolha um carro:</label>
+        <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        </select>
+        <p>O <pre1>&lt;option&gt;</pre1> define uma opção que pode ser selecionada.</p>
+
+        <p><b>Elemento <pre1>&lt;textarea&gt;</pre1>:</b> define um campo de entrada multilinha (uma área de texto):</p>
+        <p><pre>&lt;textarea name="message" rows="2" cols="30"&gt;
+            O gato está brincando no jardin.
+            &lt;/textarea&gt;</pre></p>
+        
+        <p><b>Resultado:</b></p>
+        <p><textarea name="message" rows="2" cols="30">O gato está brincando no jardim.</textarea></p>
+        <p><b>Observe que possui duas linhas.</b></p>
+
+        <p><b>Elemento <pre1>&lt;button&gt;</pre1>:</b> elemento define um botão clicável:</p>
+        <p><pre>&lt;button type="button" onclick="alert('Hello World!')"&gt;Clique aqui!&lt;/button&gt;</pre></p>
+        <p>Veja como ficou:</p>
+        <p><button type="button" onclick="alert('Hello World!')">Clique aqui!</button></p>
+
+        <h1>HTML Input Attributes</h1>
+        <p>Aqui estão os diferentes tipos de entrada que você pode usar em HTML:</p>
+        <p><ul>
+            <li><pre1>&lt;input type="button"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="checkbox"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="color"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="date"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="datetime-local"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="email"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="file"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="hidden"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="image"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="month"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="number"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="password"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="radio"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="range"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="reset"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="search"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="submit"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="tel"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="text"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="time"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="url"&gt;</pre1></li>
+            <p></p>
+            <li><pre1>&lt;input type="week"&gt;</pre1></li>
+        </ul></p>
+        
+        <p>Vamos ver um exemplos de um desses atributos de entrada:</p>
+        <p><b>Input Type Password</b></p>
+        <p><b><pre1>&lt;input type="password"&gt;</pre1></b> define um campo de senha:</p>
+        <p><pre>
+        &lt;form&gt;
+            &lt;label for="username"&gt;Username:&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;
+            &lt;label for="pwd"&gt;Password:&lt;/label&gt;&lt;br&gt;
+            &lt;input type="password" id="pwd" name="pwd"&gt;
+        &lt;/form&gt;</pre></p>
+    
+        <p>Resultado:</p>
+        <p><form>
+            <label for="username">Usuário:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Senha:</label><br>
+            <input type="password" id="pwd" name="pwd">
+          </form></p>
+
+        <h1>HTML Canvas</h1>
+        <p>O elemento HTML <pre1>&lt;canvas&gt;</pre1> é usado para desenhar gráficos em uma página da web.</p>
+        <p>Veja como desenhar um círculo:</p>
+        <p><pre>
+            &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"&gt;&lt;/canvas&gt;
+            
+            &lt;script&gt;
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95,50,40,0,2*Math.PI);
+            ctx.stroke();
+            &lt;/script&gt;</pre></p>
+
+        <p>Veja abaixo o resultado:</p>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+            
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95,50,40,0,2*Math.PI);
+            ctx.stroke();
+            </script> 
+
+        <h1>HTML SVG</h1>
+        <h2>O que é SVG?</h2>
+        <p><ul>
+            <li>SVG significa gráficos vetoriais escaláveis</li>
+            <li>SVG é usado para definir gráficos baseados em vetores para a Web</li>
+            <li>SVG define gráficos em formato XML</li>
+            <li>Cada elemento e atributo em arquivos SVG pode ser animado</li>
+            <li>SVG é uma recomendação do W3C</li>
+            <li>SVG integra-se com outros padrões, como CSS, DOM, XSL e JavaScript</li>
+        </ul></p>
+        <p><b>Estrela SVG</b></p>
+        <p>Veja abaixo como fazer uma Estrela SVG:</p>
+        <pre>
+        &lt;svg width="300" height="200"&gt;
+            &lt;polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" /&gt;
+        &lt;/svg&gt;</pre>
+
+        <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+          Sorry, your browser does not support inline SVG.
+          </svg>
+        
+        <h1>HTML Video</h1>
+        <p>Para mostrar um vídeo em HTML, use o <pre1>&lt;video&gt;</pre1> elemento:</p>
+        <p><pre>
+        &lt;video width="320" height="240" controls&gt;
+            &lt;source src="URL_DO_SEU_VÍDEO" type="video/mp4"&gt;
+            Your browser does not support the video tag.
+        &lt;/video&gt;</pre></p>
+
+        <p>Resultado do nosso vídeo:</p>
+        <video width="100%" height="500" controls>
+            <source src="/Aprendizado_de_HTML/Curso_Em_Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1>HTML Audio</h1>
+        <p>Para reproduzir um arquivo de áudio em HTML, use o <pre1><b>&lt;audio&gt;</b></pre1> elemento:</p>
+        <p><pre>
+        &lt;audio controls&gt;
+            &lt;source src="URL_DO_SEU_AUDIO" type="audio/mpeg"&gt;
+            Your browser does not support the audio element.
+        &lt;/audio&gt;</pre></p>
+
+        <p>Veja que convertemos nosso vídeo em áudio:</p>
+        <audio controls>
+            <source src="/Aprendizado_de_HTML/Curso_Em_Video.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <h1>HTML Drag/Drop</h1>
+        <p>Em HTML, qualquer elemento pode ser arrastado e solto.</p>
+        <p>Arrastar e soltar é um recurso muito comum. É quando você “pega” um objeto e o arrasta para um local diferente.</p>
+        <p>Veja um exemplo:</p>
+        <p></p>
+        
+        <style>
+            #dragElement {
+                width: 100px;
+                height: 100px;
+                background-color: #002b44;
+                color: #fff;
+                text-align: center;
+                line-height: 100px;
+                cursor: move;
+            }
+            #dropZone {
+                width: 100px;
+                height: 150px;
+                border: 2px dashed #ccc;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div id="dragElement" draggable="true" ondragstart="drag(event)">Arraste aqui</div>
+        <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)">Solte aqui</div>
+    
+        <script>
+            function allowDrop(event) {
+                event.preventDefault();
+            }
+            
+            function drag(event) {
+                event.dataTransfer.setData("text", event.target.id);
+            }
+            
+            function drop(event) {
+                event.preventDefault();
+                var data = event.dataTransfer.getData("text");
+                event.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    
+        
+        
+
+
+
+        
+
+    
+
+
+
+
+    </div>
+    <footer class="rodape">
+      <p>&copy; 2024 Basic HTML. Todos os direitos reservados. Desenvolvido por <a href="#">Ana Júlia Alves Mota</a></p>
+  </footer>
+</body>
+</html>
