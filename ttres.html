@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/Aprendizado_de_HTML/imagens/icone_favicon (1).png">
+
+    <title>HTML - Tópico 3</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Aprendizado_de_HTML/imagens/logotipo.png">
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="tum.html">HTML - Tópico 1</a></li>
+            <li><a href="tdois.html">HTML - Tópico 2</a></li>
+            <li><a href="ttres.html">HTML - Tópico 3</a></li>
+            <li><a href="#">HTML - Tópico 4</a></li>
+        </ul>
+    </nav> 
+    <div class="content">
+       <h1>HTML Java Script</h1>
+       <p>JavaScript torna as páginas HTML mais dinâmicas e interativas.</p>
+       <p>A tag HTML <pre1>&lt;script&gt;</pre1> é usada para definir um script do lado do cliente (JavaScript).
+        O <pre1>&lt;ul&gt;</pre1> elemento contém instruções de script ou aponta para um arquivo de script externo por meio do src atributo.</p>
+        <p>Veja um exemplo de Java Script no HTML:</p>
+        
+        <p id="demo"></p>
+
+        <button type="button" onclick="myFunction()">Clique aqui!</button>
+
+        <p id="demo">Veja essa demonstração.</p>
+        
+        <script>
+        function myFunction() { 
+          document.getElementById("demo").innerHTML = "Hello, JavaScript!";
+        }
+        </script>
+
+        <p>Siga os passos abaixo para criar um idêntico em seu site:</p>
+        <pre>
+          &lt;button type="button" onclick="myFunction()"&gt;Clique aqui!&lt;/button&gt;
+          &lt;p id="demo"&gt;This is a demonstration.&lt;/p&gt;
+          &lt;script&gt;
+          function myFunction() { 
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+          }
+          &lt;/script&gt;</pre>
+
+        <h1>HTML Semantics</h1>
+        <p>Um caminho de arquivo descreve a localização de um arquivo na estrutura de pastas de um site.</p>
+        <p>Veja alguns exemplos:</p>
+        <p></p>
+
+
+        <table>
+          <tr>
+            <th>Caminho</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>img src="imagem.jpg"</td>
+            <td>O arquivo "imagem.jpg" está localizado na mesma pasta da página atual</td>
+          </tr>
+          <tr>
+            <td>img src="images/picture.jpg"</td>
+            <td>O arquivo "picture.jpg" está localizado na pasta de imagens da pasta atual</td>
+          </tr>
+          <tr>
+            <td>img src="/images/picture.jpg"</td>
+            <td>O arquivo "picture.jpg" está localizado na pasta de imagens na raiz da web atual</td>
+          </tr>
+          <tr>
+            <td>img src="../imagem.jpg"</td>
+            <td>O arquivo "picture.jpg" está localizado na pasta um nível acima da pasta atual</td>
+          </tr>
+        </table>
+        
+        <h1>HTML Style Guide</h1>
+        <p>Siga algumas dicas para não enfrentar erros em seu código:</p>
+        <p><li>Sempre declarar o tipo de documento.</li></p>
+        <p><li>Use nomes de elementos em letras minúsculas.</li></p>
+        <p><li>Fechar todos os elementos HTML.</li></p>
+        <p><li>Use nomes de atributos em letras minúsculas.</li></p>
+        <p><li>Sempre citar valores de atributos.</li></p>
+        <p><li>Sempre especifique alt, largura e altura para imagens.</li></p>
+        <p><li>Espaços e sinais de igual.</li></p>
+
+
+        <h1>HTML Entities</h1>
+        <p>Alguns caracteres são reservados em HTML.
+        Se você usar os sinais de menor que (<) ou maior que (>) em seu texto HTML, o navegador poderá misturá-los com tags.</p>
+        <p>Veja algumas entidades úteis de caracteres HTML:</p>
+        <p></p>
+        <table>
+          <tr>
+            <th>Resultado</th>
+            <th>Descrição</th>
+            <th>Nome</th>
+            <th>Número</th>
+          </tr>
+          <tr>
+            <td>Espaço não quebrável</td>
+            <td>&nbsp;</td>
+            <td>&amp;nbsp;</td>
+            <td>&amp;#160;</td>
+          </tr>
+          <tr>
+            <td>&lt;</td>
+            <td>menor que</td>
+            <td>&amp;lt;</td>
+            <td>&amp;#60;</td>
+          </tr>
+          <tr>
+            <td>&gt;</td>
+            <td>maior que</td>
+            <td>&amp;gt;</td>
+            <td>&amp;#62;</td>
+          </tr>
+          <tr>
+            <td>&amp;</td>
+            <td>e comercial</td>
+            <td>&amp;amp;</td>
+            <td>&amp;#38;</td>
+          </tr>
+          <tr>
+            <td>"</td>
+            <td>marca de aspas duplas</td>
+            <td>&amp;quot;</td>
+            <td>&amp;#34;</td>
+          </tr>
+          <tr>
+            <td>'</td>
+            <td>marca de aspas simples</td>
+            <td>&amp;apos;</td>
+            <td>&amp;#39;</td>
+          </tr>
+          <tr>
+            <td>¢</td>
+            <td>centavo</td>
+            <td>&amp;cent;</td>
+            <td>&amp;#162;</td>
+          </tr>
+          <tr>
+            <td>£</td>
+            <td>libra</td>
+            <td>&amp;pound;</td>
+            <td>&amp;#163;</td>
+          </tr>
+          <tr>
+            <td>¥</td>
+            <td>iene</td>
+            <td>&amp;yen;</td>
+            <td>&amp;#165;</td>
+          </tr>
+          <tr>
+            <td>€</td>
+            <td>euro</td>
+            <td>&amp;euro;</td>
+            <td>&amp;#8364;</td>
+          </tr>
+          <tr>
+            <td>©</td>
+            <td>direitos autorais</td>
+            <td>&amp;copy;</td>
+            <td>&amp;#169;</td>
+          </tr>
+          <tr>
+            <td>®</td>
+            <td>marca registrada</td>
+            <td>&amp;reg;</td>
+            <td>&amp;#174;</td>
+          </tr>
+        </table>
+        
+        <h1>HTML Symbols</h1>
+        <p>Muitos símbolos matemáticos, técnicos e monetários não estão presentes em um teclado normal. Veja abaixo como adicionar alguns em seu código</p>
+        <p></p>
+        <table>
+          <tr>
+            <th>Caractere</th>
+            <th>Código Numérico</th>
+            <th>Entidade HTML</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>©</td>
+            <td>&amp;#169;</td>
+            <td>&amp;copy;</td>
+            <td>Direitos Autorais</td>
+          </tr>
+          <tr>
+            <td>®</td>
+            <td>&amp;#174;</td>
+            <td>&amp;reg;</td>
+            <td>Registrado</td>
+          </tr>
+          <tr>
+            <td>€</td>
+            <td>&amp;#8364;</td>
+            <td>&amp;euro;</td>
+            <td>Sinal do Euro</td>
+          </tr>
+          <tr>
+            <td>™</td>
+            <td>&amp;#8482;</td>
+            <td>&amp;trade;</td>
+            <td>Marca Registrada</td>
+          </tr>
+          <tr>
+            <td>←</td>
+            <td>&amp;#8592;</td>
+            <td>&amp;larr;</td>
+            <td>Seta para a Esquerda</td>
+          </tr>
+          <tr>
+            <td>↑</td>
+            <td>&amp;#8593;</td>
+            <td>&amp;uarr;</td>
+            <td>Seta para Cima</td>
+          </tr>
+          <tr>
+            <td>→</td>
+            <td>&amp;#8594;</td>
+            <td>&amp;rarr;</td>
+            <td>Seta para a Direita</td>
+          </tr>
+          <tr>
+            <td>↓</td>
+            <td>&amp;#8595;</td>
+            <td>&amp;darr;</td>
+            <td>Seta para Baixo</td>
+          </tr>
+          <tr>
+            <td>♠</td>
+            <td>&amp;#9824;</td>
+            <td>&amp;spades;</td>
+            <td>Ás de Espadas</td>
+          </tr>
+          <tr>
+            <td>♣</td>
+            <td>&amp;#9827;</td>
+            <td>&amp;clubs;</td>
+            <td>Trevo</td>
+          </tr>
+          <tr>
+            <td>♥</td>
+            <td>&amp;#9829;</td>
+            <td>&amp;hearts;</td>
+            <td>Coração</td>
+          </tr>
+          <tr>
+            <td>♦</td>
+            <td>&amp;#9830;</td>
+            <td>&amp;diams;</td>
+            <td>Ouro</td>
+          </tr>
+        </table>
+
+        <h1> HTML Emojis</h1>
+        <p>Emojis são caracteres do conjunto de caracteres UTF-8:</p>
+        <p></p>
+        <table>
+          <tr>
+            <th>Emoji</th>
+            <th>Valor</th>
+          </tr>
+          <tr>
+            <td>🗻</td>
+            <td>&amp;#128507;</td>
+          </tr>
+          <tr>
+            <td>🗼</td>
+            <td>&amp;#128508;</td>
+          </tr>
+          <tr>
+            <td>🗽</td>
+            <td>&amp;#128509;</td>
+          </tr>
+          <tr>
+            <td>🗾</td>
+            <td>&amp;#128510;</td>
+          </tr>
+          <tr>
+            <td>🗿</td>
+            <td>&amp;#128511;</td>
+          </tr>
+          <tr>
+            <td>😀</td>
+            <td>&amp;#128512;</td>
+          </tr>
+          <tr>
+            <td>😁</td>
+            <td>&amp;#128513;</td>
+          </tr>
+          <tr>
+            <td>😂</td>
+            <td>&amp;#128514;</td>
+          </tr>
+          <tr>
+            <td>😃</td>
+            <td>&amp;#128515;</td>
+          </tr>
+          <tr>
+            <td>😄</td>
+            <td>&amp;#128516;</td>
+          </tr>
+          <tr>
+            <td>😅</td>
+            <td>&amp;#128517;</td>
+          </tr>
+        </table>
+
+        <h1>HTML Charsets</h1>
+        <p>O charset HTML, abreviação de "character set" (conjunto de caracteres), especifica a codificação de caracteres utilizada em um documento HTML. 
+          Ele define como os caracteres serão interpretados e exibidos pelo navegador.</p>
+
+          <p>O elemento <pre1>&lt;meta&gt; charset="UTF-8"></pre1>, por exemplo, indica que o documento HTML está codificado usando UTF-8, que é uma codificação de caracteres capaz de representar uma ampla gama de caracteres de diferentes idiomas e símbolos.
+          
+          <p>Ao definir o charset corretamente, garantimos que os caracteres especiais, acentos, emojis e outros elementos textuais sejam exibidos corretamente no navegador, independentemente do idioma ou dos símbolos utilizados no documento HTML. 
+          Isso é fundamental para garantir uma experiência consistente e sem problemas para os usuários.</p>
+
+          <h1>HTML URL Encode</h1>
+          <p>URL é outra palavra para endereço da web.
+
+            Uma URL pode ser composta por palavras (por exemplo, w3schools.com) ou por um endereço de protocolo de Internet (IP) (por exemplo, 192.68.20.50).</p>
+            <p>Veja alguns protocolos:</p>
+          <p><table>
+            <tr>
+              <th>Protocolo</th>
+              <th>Descrição</th>
+              <th>Uso</th>
+            </tr>
+            <tr>
+              <td>http</td>
+              <td>Protocolo de Transferência de Hipertexto</td>
+              <td>Páginas web comuns. Não criptografado</td>
+            </tr>
+            <tr>
+              <td>https</td>
+              <td>Protocolo de Transferência de Hipertexto Seguro</td>
+              <td>Páginas web seguras. Criptografado</td>
+            </tr>
+            <tr>
+              <td>ftp</td>
+              <td>Protocolo de Transferência de Arquivos</td>
+              <td>Transferência de arquivos, download ou upload</td>
+            </tr>
+            <tr>
+              <td>file</td>
+              <td>----</td>
+              <td>Um arquivo em seu computador</td>
+            </tr>
+          </table>
+          </p>
+
+          <h1>HTML vs XHTML</h1>
+          <p>HTML (HyperText Markup Language) e XHTML (Extensible HyperText Markup Language) são ambas linguagens de marcação usadas para criar páginas da web. Aqui estão algumas diferenças básicas entre elas:</p>
+<p></p>
+<ol>
+  <li><strong>Sintaxe:</strong> HTML possui uma sintaxe mais flexível e permissiva, enquanto XHTML é mais rigoroso e exige uma sintaxe mais estruturada e bem-formada, similar ao XML.</li>
+  <p></p>
+  <li><strong>XML Well-Formedness:</strong> XHTML é baseado em XML, o que significa que ele segue regras mais rígidas de bem-formação, como a necessidade de fechar todas as tags e atributos em letras minúsculas.</li>
+ <p></p>
+  <li><strong>Compatibilidade com XML:</strong> XHTML é compatível com XML, o que permite que ele seja facilmente processado e manipulado por outras ferramentas XML. HTML não possui essa mesma compatibilidade.</li>
+<p></p>
+  <li><strong>MIME Type:</strong> O tipo de mídia (MIME type) para HTML é geralmente "text/html", enquanto para XHTML é "application/xhtml+xml" ou "application/xml".</li>
+  <p></p>
+  <li><strong>Modo de Processamento:</strong> HTML pode ser interpretado tanto no modo de análise padrão quanto no modo de compatibilidade, enquanto o XHTML deve ser interpretado no modo de análise XML.</li>
+</ol>
+<p></p>
+<p>Em resumo, XHTML é uma versão mais rigorosa e estruturada do HTML, seguindo as convenções do XML, o que pode facilitar a integração com outras tecnologias baseadas em XML. No entanto, a adoção do XHTML foi diminuindo ao longo dos anos em favor de abordagens mais simples e flexíveis, como o HTML5.</p>
+
+  <h1> HTML Forms</h1>
+  <p>Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário é geralmente enviada a um servidor para processamento.<form action="/action_page.php">
+    <p>Faça você mesmo:</p>
+    <p>
+      <pre>
+        &lt;form action="/action_page.php"&gt;
+  &lt;label for="fname"&gt;Nome::&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" id="fname" name="fname" value="John"&gt;&lt;br&gt;
+  &lt;label for="lname"&gt;Sobrenome:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+
+      </pre>
+    </p>
+    <label for="fname">Nome:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Sobrenome:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Enviar">
+  </form> </p>
+
+  <h1> HTML Form Attributes</h1>
+  <p>Veja os principais atributos dos formulários:</p>
+  <p><ul>
+    <li><strong>action:</strong> Define para onde os dados do formulário serão enviados quando ele for submetido. O valor deste atributo é um URL, geralmente um script no servidor que processará os dados do formulário.</li>
+    <p></p>
+    <li><strong>method:</strong> Especifica o método HTTP a ser usado ao enviar os dados do formulário. Os dois métodos principais são "GET" e "POST". O método "GET" envia os dados como parte da URL, enquanto o método "POST" envia os dados no corpo da requisição HTTP.</li>
+    <p></p>
+    <li><strong>name:</strong> Fornece um nome ao formulário. É útil quando você deseja identificar o formulário em scripts JavaScript ou ao processar os dados do formulário no servidor.</li>
+    <p></p>
+    <li><strong>target:</strong> Especifica onde o resultado do envio do formulário será aberto. Por exemplo, "_blank" abre o resultado em uma nova janela ou guia, enquanto "_self" abre no mesmo quadro ou janela.</li>
+    <p></p>
+    <li><strong>autocomplete:</strong> Indica se os navegadores devem ou não preencher automaticamente os campos do formulário com valores que o usuário inseriu anteriormente. Os valores possíveis são "on" e "off".</li>
+    <p></p>
+    <li><strong>enctype:</strong> Especifica como os dados do formulário serão codificados antes de serem enviados para o servidor. Isso é relevante apenas quando o método do formulário é "POST". O valor padrão é "application/x-www-form-urlencoded", mas também pode ser "multipart/form-data" para envio de arquivos.</li>
+    <p></p>
+    <li><strong>novalidate:</strong> Indica ao navegador para não validar os campos do formulário antes de enviá-lo. Isso pode ser útil quando se deseja validar os campos manualmente com JavaScript.</li>
+    <p></p>
+    <li><strong>accept-charset:</strong> Especifica a codificação de caracteres que será usada para enviar os dados do formulário para o servidor. Isso é relevante principalmente quando você está enviando dados que podem conter caracteres não ASCII.</li>
+  </ul></p>
+
+    </div>
+    <footer class="rodape">
+      <p>&copy; 2024 Basic HTML. Todos os direitos reservados. Desenvolvido por <a href="#">Ana Júlia Alves Mota</a></p>
+  </footer>
+</body>
+</html>
